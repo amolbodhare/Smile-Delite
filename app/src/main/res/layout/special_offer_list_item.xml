@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="156dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_margin="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:scaleType="centerCrop" />
+            <ImageView
+                android:layout_width="10dp"
+                android:src="@drawable/heart"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="138dp"
+                android:layout_height="9dp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thumbnail"
+                android:fontFamily="@font/heebo_medium"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:textSize="10dp" />
+
+
+            <ImageView
+
+                android:id="@+id/imv_rs_red"
+                android:layout_width="4dp"
+                android:layout_height="7dp"
+                android:src="@drawable/rupeered"
+                android:layout_marginLeft="30dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/title"
+                android:layout_below="@id/thumbnail"/>
+            <TextView
+                android:id="@+id/old_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heebo_regular"
+                android:layout_below="@id/thumbnail"
+                android:layout_toRightOf="@id/imv_rs_red"
+                android:layout_marginTop="5dp"
+                android:text="110"
+                android:textColor="@color/Red"
+                android:textSize="10dp" />
+
+            <ImageView
+                android:id="@+id/Rs_imv"
+                android:layout_width="4dp"
+                android:layout_height="7dp"
+                android:src="@drawable/rupee"
+                android:layout_marginLeft="6dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/old_price"
+                android:layout_below="@id/thumbnail"/>
+
+            <TextView
+                android:id="@+id/Rs_value_tv"
+                android:layout_width="15dp"
+                android:text="90"
+                android:layout_height="19dp"
+                android:layout_below="@id/thumbnail"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/Rs_imv"
+                android:fontFamily="@font/heebo_regular"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/dish_properties_tv"
+                android:layout_width="105dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="5dp"
+                android:text="Low carb,Mexican,American"
+                android:layout_below="@id/title"
+                android:fontFamily="@font/heebo_regular"
+                android:textColor="@color/grey6"
+                android:textSize="8dp" />
+
+            <ImageView
+                android:id="@+id/imv_adjust_saftey"
+                android:layout_width="7dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_below="@id/dish_properties_tv"
+                android:src="@drawable/adjust_saftey"
+                android:layout_height="7dp" />
+            <ImageView
+                android:id="@+id/timer_imv"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/imv_adjust_saftey"
+                android:layout_width="6dp"
+                android:layout_below="@id/dish_properties_tv"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/clock_nine"
+                android:layout_height="6dp" />
+
+            <TextView
+                android:id="@+id/time_value_tv"
+                android:layout_width="24dp"
+                android:layout_height="11dp"
+                android:layout_below="@id/dish_properties_tv"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="3dp"
+                android:layout_toRightOf="@id/timer_imv"
+                android:fontFamily="@font/heebo_regular"
+                android:text="30 min"
+                android:textSize="8dp" />
+            <ImageView
+                android:id="@+id/star_imv"
+                android:layout_toRightOf="@id/time_value_tv"
+                android:layout_width="6dp"
+                android:layout_below="@id/dish_properties_tv"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/star"
+                android:layout_height="6dp" />
+            <TextView
+                android:id="@+id/star_value"
+                android:text="5.0"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/heebo_regular"
+                android:textSize="8dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="3dp"
+                android:layout_toRightOf="@id/star_imv"
+                android:layout_alignBaseline="@id/star_imv"
+                android:layout_below="@id/dish_properties_tv"
+                android:layout_width="11dp"
+                android:layout_height="11dp" />
+            <ImageView
+                android:id="@+id/img_add"
+                android:src="@drawable/add_icon"
+                android:layout_below="@id/Rs_value_tv"
+                android:layout_toRightOf="@id/star_value"
+                android:layout_width="25dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_height="17dp" />
+
+
+            <!-- <ImageView
+                 android:id="@+id/overflow"
+                 android:layout_width="20dp"
+                 android:layout_height="30dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_below="@id/thumbnail"
+                 android:layout_marginTop="10dp"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/applogo2mp" />-->
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.AccountFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/account_details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/profile_details_grey">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Account Details"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/edit_profile_link_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/account_details_layout"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="30dp"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/edit_profile_link_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Edit Profile"
+                android:textColor="@color/text_back_grey"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/right_arrow_navigational"
+                android:tint="@color/grey" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/edit_profile_link_tv"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_grey" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/email_address_link_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_profile_link_layout"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:id="@+id/email_address_link_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Email Address"
+                android:textColor="@color/text_back_grey"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/right_arrow_navigational"
+                android:tint="@color/grey" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/email_address_link_tv"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_grey" />
+
+        </RelativeLayout>
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/email_address_exp_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mobile_number_link_layout"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingBottom="17dp"
+            app:ael_duration="300"
+            app:ael_expanded="false"
+            app:ael_interpolator="accelerateDecelerate"
+            app:ael_orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/email_address_exp_link_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="17dp"
+                android:text="mailtobodhare@gmail.com" />
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mobile_number_link_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_address_exp_layout"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:id="@+id/mobile_number_link_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Mobile Number"
+                android:textColor="@color/text_back_grey"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/right_arrow_navigational"
+                android:tint="@color/grey" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/mobile_number_link_tv"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_grey" />
+
+        </RelativeLayout>
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/mobile_number_exp_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_address_link_layout"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingBottom="17dp"
+            app:ael_duration="300"
+            app:ael_expanded="false"
+            app:ael_interpolator="accelerateDecelerate"
+            app:ael_orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/mobile_number_exp_link_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="17dp"
+                android:text="9921538083" />
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/my_address_link_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mobile_number_exp_layout"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:id="@+id/my_address_link_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="My Address"
+                android:textColor="@color/text_back_grey"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/right_arrow_navigational"
+                android:tint="@color/grey" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/my_address_link_tv"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_grey" />
+
+        </RelativeLayout>
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/my_address_exp_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_address_link_layout"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingBottom="17dp"
+            app:ael_duration="300"
+            app:ael_expanded="false"
+            app:ael_interpolator="accelerateDecelerate"
+            app:ael_orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/flat_no_exp_link_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="17dp"
+                android:hint="flat no." />
+            <EditText
+                android:id="@+id/stret_name_exp_link_edt"
+                android:layout_below="@id/flat_no_exp_link_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="17dp"
+                android:hint="Street name" />
+            <EditText
+                android:id="@+id/area_exp_link_tv"
+                android:layout_below="@id/stret_name_exp_link_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="17dp"
+                android:hint="area" />
+            <EditText
+                android:id="@+id/city_exp_link_tv"
+                android:layout_below="@id/area_exp_link_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="17dp"
+                android:hint="city name" />
+            <EditText
+                android:id="@+id/pin_code_link_tv"
+                android:layout_below="@id/city_exp_link_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="17dp"
+                android:hint="area pin code" />
+            <EditText
+                android:id="@+id/state_link_tv"
+                android:layout_below="@id/pin_code_link_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="17dp"
+                android:hint="state" />
+            <Button
+                android:id="@+id/saveoredit_btn"
+                android:layout_marginTop="17dp"
+                android:layout_below="@id/state_link_tv"
+                android:text="Save/Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:text="Logout"
+            android:drawableStart="@drawable/ic_shoppingcart"
+            android:layout_marginTop="17dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

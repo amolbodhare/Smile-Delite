@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:tag="cards main container">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E6000000">
+
+
+                <ImageView
+                    android:id="@+id/foodImg"
+                    android:layout_width="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/chinese_food"
+                    android:layout_height="60dp"/>
+                <TextView
+                    android:id="@+id/eventNameTv"
+                    android:layout_toRightOf="@id/foodImg"
+                    android:text="Chiken Hydrabadi Fried Rice"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/eventDateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_below="@id/eventNameTv"
+                    android:layout_toRightOf="@id/foodImg"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:drawableStart="@drawable/ic_rupees_twelve"
+                    android:drawablePadding="6dp"
+                    android:drawableTint="@color/colorWhite"
+                    android:fontFamily="@font/raleway_regular"
+                    android:layout_marginLeft="17dp"
+                    android:text="1000"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/eventNameTv"
+                    android:layout_toRightOf="@id/eventDateTv"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/minusBtn"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:drawableStart="@drawable/ic_remove_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/counterTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Qty :\n5"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/plusBtn"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:drawableStart="@drawable/ic_add_black_24dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/companyDetailsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/foodImg"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:id="@+id/companyUserNameTv"
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_medium"
+                        android:text="no fat,no transfat"
+                        android:textColor="@color/white"
+                        android:textSize="11sp" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="50">
+                        <TextView
+                            android:id="@+id/eventLocationTvb"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="Andheri"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_facebook_placeholder_for_locate_places_on_maps"
+                            android:drawableTint="@color/white"
+                            android:drawablePadding="7dp"
+                            android:fontFamily="@font/raleway_regular"
+                            android:textColor="#8CC63F"
+                            android:textSize="12sp"
+                            />
+
+                    </RelativeLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

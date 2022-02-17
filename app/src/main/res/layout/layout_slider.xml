@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/im_slider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/app_name"/>
+    <TextView
+        android:id="@+id/banner_dish_title"
+        android:text="Burrito Chicken"
+        android:textSize="18dp"
+        android:layout_marginLeft="14dp"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/raleway_medium"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Lorem Ipsum"
+        android:layout_below="@id/banner_dish_title"
+        android:textSize="12dp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="14dp"
+        android:fontFamily="@font/raleway_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

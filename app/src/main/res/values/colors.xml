@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <!--<color name="colorPrimaryDark">#00574B</color>-->
+    <color name="colorPrimaryDark">#1A1A1A</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorEditText">#CCBCBCBD</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorSplashBack">#0DD2DA</color>
+    <color name="colorSkipText">#FEFEFE</color>
+
+    <color name="textgrey">#5A5A5A</color>
+    <color name="colorMailBtn">#3CCFFF</color>
+    <color name="colorFbBtn">#3A589B</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent">#29000000</color>
+    <color name="icongrey">#707070</color>
+    <color name="btnBackground">#8CC63F</color>
+
+    <color name="drawer_border"> #7ED962</color>
+    <color name="custom_status_bar_color">#88B94C</color>
+
+    <color name="green">#0C3F1F</color>
+    <color name="transWhite">#99ffffff</color>
+    <color name="yellow">#EEB008</color>
+
+    <color name="Red">#EB0000</color>
+    <color name="darkRed">#B71C1C</color>
+    <color name="tranDarkRed">#99F44336</color>
+    <color name="black">#000000</color>
+    <color name="semiTrans">#60000000</color>
+
+    <color name="grey">#808080</color>
+    <color name="greytext">#787993</color>
+
+    <color name="grey1">#FAFAFA</color>
+    <color name="grey2">#F5F5F5</color>
+    <color name="grey3">#EEEEEE</color>
+    <color name="grey4">#E0E0E0</color>
+    <color name="grey5">#BDBDBD</color>
+    <color name="grey6">#C7C7C7</color>
+
+
+    <color name="profile_details_grey">#EEEEEE</color>
+    <color name="text_back_grey">#A4A4A4</color>
+    <color name="border_grey">#EBEBEB</color>
+
+</resources>

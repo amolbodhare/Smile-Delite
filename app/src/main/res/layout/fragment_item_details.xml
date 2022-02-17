@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.ItemDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imvItem"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/chinese_food"
+            android:layout_height="200dp"/>
+
+            <LinearLayout
+                android:layout_below="@id/imvItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="17dp">
+
+                <RelativeLayout
+                    android:id="@+id/order_now_link_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/order_now_lay_back"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:id="@+id/orderNowLinkTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/btnOrderIcon"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:paddingStart="12sp"
+                        android:text="ORDER NOW"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/btnOrderIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:paddingRight="12sp"
+                        android:src="@drawable/ic_delivery"
+                        android:tint="@color/colorWhite" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/add_to_cart_link_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/order_now_lay_back"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:id="@+id/addToCartLinkTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/btnAddToCartIcon"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:paddingStart="12sp"
+                        android:text="ADD TO CART"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/btnAddToCartIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="16dp"
+                        android:paddingRight="12sp"
+                        android:src="@drawable/ic_shoppingcart"
+                        android:tint="@color/colorWhite" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
